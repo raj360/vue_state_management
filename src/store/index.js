@@ -6,13 +6,16 @@ export default createStore({
   },
   mutations: {
   increaseCounter(state){
-    this.state.counter++
+    state.counter++
   },
   decreaseCounter(state){
-    this.state.counter--
+    state.counter--
   },
   },
   actions: {
+  increaseCounter(){
+   console.log('action')
+  }
   },
   getters:{
   

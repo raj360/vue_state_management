@@ -5,7 +5,7 @@
     <div class="counter">{{$store.state.counter}}</div>
     
     <div class="buttons">
-     <button @click="$store.commit('increaseCounter')">+</button>
+     <button @click="$store.dispatch('increaseCounter')">+</button>
      <button @click="$store.commit('decreaseCounter')">-</button>
     </div>
   </div>
